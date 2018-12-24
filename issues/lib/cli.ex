@@ -8,7 +8,9 @@ defmodule Issues.CLI do
   """
 
   def run(argv) do
-    parse_args(argv)
+    argv
+    |> parse_args
+    |> process
   end
 
   @doc """
@@ -40,12 +42,6 @@ defmodule Issues.CLI do
   # bad arg or --help
   def args_to_internal_representation(_) do
     :help
-  end
-
-  def run(argv) do
-    argv
-    |> parse_args
-    |> process
   end
 
   def process(:help) do
