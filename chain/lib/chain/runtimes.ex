@@ -8,7 +8,7 @@ defmodule Chain.Runtimes do
 
   def create_processes(n) do
     code_to_run = fn (_, send_to) ->
-      spawn(Chain, :counter, [send_to])
+      spawn(Chain.Runtimes, :counter, [send_to])
     end
 
     last = Enum.reduce(1..n, self(), code_to_run)
@@ -22,7 +22,7 @@ defmodule Chain.Runtimes do
   end
 
   def run(n) do
-    :timer.tc(Chain, :create_processes, [n])
+    :timer.tc(Chain.Runtimes, :create_processes, [n])
     |> IO.inspect
   end
 end
