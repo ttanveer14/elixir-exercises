@@ -171,7 +171,7 @@ JAPANESE STEW -- +40%/2000 AGI, 5% HP -- Judith: Pork Stew
    A traditional home cooked meal. It's difficult to get the flavoring just 
    right. Increases Agility.
 _____________________________________________________________________________
-VEGETABLE STIRY FRY -- +60%/2400 AGI, 5% HP -- Rita: Salad
+VEGETABLE STIR FRY -- +60%/2400 AGI, 5% HP -- Rita: Salad
    Carrot, Cucumber, Meat, Onion -- 150-210G
    A nutritious dish that can be made with any kinds of vegetables. Increases
    Agility greatly.

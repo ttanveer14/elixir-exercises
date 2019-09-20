@@ -1,4 +1,4 @@
-defmodule Vesperia.RecipeMigrator do
+defmodule Vesperia.RecipesMigrator do
   @recipes_list "./priv/vesperia-recipes-effects.txt"
 
   def parse_recipe_names do

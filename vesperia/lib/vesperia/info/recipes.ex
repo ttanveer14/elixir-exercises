@@ -1,4 +1,4 @@
-defmodule Vesperia.Recipes do
+defmodule Vesperia.Info.Recipes do
   def recipes do
     %{
       okonomiyaki: %{
@@ -40,7 +40,7 @@ defmodule Vesperia.Recipes do
       clam_chowder: %{onion: 1, potato: 1, scallop: 1},
       croquette: %{meat: 1, onion: 1, potato: 1},
       cake: %{egg: 1, milk: 1, strawberry: 1},
-      vegetable_stiry_fry: %{carrot: 1, cucumber: 1, meat: 1, onion: 1},
+      vegetable_stir_fry: %{carrot: 1, cucumber: 1, meat: 1, onion: 1},
       seafood_bowl: %{
         cucumber: 1,
         rice: 1,
