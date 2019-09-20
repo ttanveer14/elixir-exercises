@@ -1,0 +1,47 @@
+-----------------------------
+  FRUIT            BUY   SELL
+ -----------------------------
+  Apple            40    20
+  Banana           20    10
+  Kiwifruit        40    20
+  Orange           20    10
+  Peach            40    20
+  Strawberry       20    10
+ -----------------------------
+  MEAT             BUY   SELL
+ -----------------------------
+  Beef             100   50
+  Chicken          80    40
+  Mackerel         40    20
+  Pork             80    40
+  Salmon           40    20
+  Scallop          60    30
+  Shrimp           40    20
+  Squid            40    20
+  Tuna             80    40
+ -----------------------------
+  VEGETABLES       BUY   SELL
+ -----------------------------
+  Cabbage          50    25
+  Carrot           40    20
+  Cucumber         40    20
+  Lettuce          50    25
+  Napa Cabbage     40    20
+  Onion            30    15
+  Potato           30    15
+  Radish           40    20
+  Shiitake         50    25
+  Tomato           40    20
+ -----------------------------
+  OTHER            BUY   SELL
+ -----------------------------
+  Bread            80    40
+  Dried Seaweed    30    15
+  Egg              20    10
+  Kelp             20    10
+  Milk             20    10
+  Miso             150   75
+  Rice             80    40
+  Sticky Flour     50    25
+  Tofu             20    10
+ -----------------------------
