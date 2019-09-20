@@ -1,5 +1,5 @@
 defmodule Vesperia.Info.Ingredients do
-  def ingredients do
+  def ingredient_groups do
     %{
       fruit: [:strawberry, :peach, :orange, :kiwifruit, :banana, :apple],
       fish: [:tuna, :squid, :shrimp, :scallop, :salmon, :mackerel],
@@ -18,5 +18,12 @@ defmodule Vesperia.Info.Ingredients do
         :cabbage
       ]
     }
+  end
+
+  def ingredients do
+    ingredient_groups()
+    |> Map.values()
+    |> List.flatten()
+    |> Enum.uniq()
   end
 end
