@@ -20,7 +20,7 @@
   Squid            40    20
   Tuna             80    40
  -----------------------------
-  VEGETABLES       BUY   SELL
+  VEGETABLE       BUY   SELL
  -----------------------------
   Cabbage          50    25
   Carrot           40    20
