@@ -1,4 +1,4 @@
-defmodule Vesperia.IngredientsMigrator do
+defmodule Vesperia.Migrators.IngredientsMigrator do
   @ingredients_list "./priv/ingredients.txt"
 
   def parse_ingredients() do

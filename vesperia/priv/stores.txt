@@ -1,0 +1,60 @@
+_____________________________________________________________________________
+DEIDON HOLD -- "Vega"
+Bread, Egg
+_____________________________________________________________________________
+HALURE -- "Regulus"
+Beef*, Bread, Cabbage*, Carrot*, Chicken*, Egg, Lettuce*, Napa Cabbage*, 
+Onion*, Pork*, Potato*, Radish*, Rice*, Shiitake*, Sticky Flour*, Tomato*
+_____________________________________________________________________________
+ASPIO -- "Aspio"
+Beef, Bread, Egg, Onion, Rice
+_____________________________________________________________________________
+CAPUA NOR -- "Nor"
+Apple, Beef, Bread, Dried Seaweed, Mackerel, Milk, Onion, Peach, Rice, Salmon
+_____________________________________________________________________________
+CAPUA TORIM -- "Torim"
+Beef, Chicken, Dried Seaweed, Mackerel, Onion, Peach, Potato, Rice, Salmon
+_____________________________________________________________________________
+HELIORD -- "Heliord"
+Beef, Chicken, Egg, Mackerel, Milk, Miso, Onion, Peach, Potato, Rice
+_____________________________________________________________________________
+DAHNGREST -- "Dahngrest"
+Apple, Banana**, Beef, Bread, Cabbage***, Carrot***, Chicken, Cucumber, Egg, 
+Kiwifruit***, Lettuce, Milk, Miso*, Napa Cabbage***, Onion, Orange***, Peach, 
+Pork***, Potato, Radish*, Rice, Shiitake***, Sticky Flour***, Strawberry, 
+Tofu*, Tomato**
+_____________________________________________________________________________
+GHASFAROST -- "Mallow"
+Apple, Bread, Chicken, Cucumber, Egg, Lettuce, Milk, Onion, Peach, Rice, 
+Strawberry, Tomato
+_____________________________________________________________________________
+NORDOPOLICA -- "Nordopolica"
+Beef, Bread, Cabbage**, Chicken, Cucumber, Dried Seaweed**, Egg, Kelp*, 
+Lettuce, Mackerel, Milk, Miso*, Napa Cabbage**, Onion, Pork, Potato*, 
+Radish*, Rice*, Salmon, Scallop, Shiitake**, Shrimp, Squid, Sticky Flour, 
+Tofu*, Tomato, Tuna
+_____________________________________________________________________________
+MANTAIC -- "Mantaic"
+Beef, Cabbage, Carrot, Chicken, Egg, Milk, Miso, Onion, Pork, Potato, 
+Radish, Rice, Sticky Flour
+_____________________________________________________________________________
+YORMGEN -- "Polaris"
+Beef, Bread, Cabbage, Carrot, Chicken, Cucumber, Egg, Lettuce, Onion, Pork, 
+Potato, Rice, Sticky Flour, Tomato
+_____________________________________________________________________________
+MYOZORO -- "Deneb"
+Beef, Bread, Carrot, Chicken, Egg, Milk, Napa Cabbage, Onion, Pork, Potato, 
+Radish, Rice, Shiitake, Sticky Flour, Tofu
+_____________________________________________________________________________
+HERACLES -- "Adecor"
+Beef, Bread, Carrot, Chicken, Egg, Lettuce, Onion, Pork, Potato, Radish, 
+Rice, Scallop, Shiitake, Shrimp, Squid, Sticky Flour, Tuna
+_____________________________________________________________________________
+ZAPHIAS -- "Imperial Capital"
+Apple, Beef, Bread, Cabbage, Carrot, Chicken, Cucumber, Lettuce, Mackerel, 
+Milk, Onion, Peach, Pork, Potato, Rice, Salmon, Sticky Flour, Strawberry, 
+Tuna
+_____________________________________________________________________________
+AURNION -- "Aurnion"
+Beef, Cabbage, Carrot, Chicken, Cucumber, Egg, Lettuce, Milk, Napa Cabbage, 
+Onion, Pork, Potato, Radish, Rice, Shiitake, Sticky Flour, Tomato
