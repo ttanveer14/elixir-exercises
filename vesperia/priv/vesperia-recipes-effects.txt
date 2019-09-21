@@ -1,0 +1,298 @@
+/// HP Recovery ///
+_____________________________________________________________________________
+SANDWICH -- 10% HP -- Default Recipe
+   Bread, Egg -- 100G
+   Egg salad sandwiched between two slices of bread. Restores a small amount 
+   of HP.
+_____________________________________________________________________________
+BEEF BOWL -- 20% HP, Cures Poison -- Yuri: Rice Ball
+   Beef, Onion, Rice -- 210G
+   A scrumptious bowl of rice topped with beef and tofu. Restores some HP.
+_____________________________________________________________________________
+CURRY -- 30% HP -- Wonder Chef: Mantaic
+   Carrot, Meat, Onion, Potato, Rice -- 220-280G
+   An all-time favorite dish made from a blend of spices. Restores a moderate
+   amount of HP
+_____________________________________________________________________________
+CREAM STEW -- 40% HP -- Wonder Chef: Myozoro
+   Carrot, Chicken, Milk, Onion, Potato --  200G
+   The heavenly cream sauce is prefect with potatoes. Restores a large amount
+   of HP.
+_____________________________________________________________________________
+UDON NOODLES HOT POT -- 50% HP -- Yuri: Pork Miso Soup
+   Egg, Napa Cabbage, Shiitake, Shrimp, Squid, Sticky Flour -- 240G
+   These noodles are piping hot. Don't scorch your tongue! Restores a large
+   amount of HP.
+-----------------------------------------------------------------------------
+
+/// TP Recovery ///
+_____________________________________________________________________________
+SORBET -- 10% TP --Wonder Chef: Capua Nor
+   Fruit, Milk -- 40-60G
+   A frozen and refreshing dessert made with fruit juice. Restores some TP.
+_____________________________________________________________________________
+PUDDING -- 20% TP -- Yuri: Sorbet
+   Egg, Milk -- 40G
+   A creamy custard dessert with a rich caramel sauce. Restores some TP.
+_____________________________________________________________________________
+CAKE -- 30% TP -- Yuri: Pudding
+   Egg, Milk, Strawberry -- 60G
+   A sweet treat topped with a big, red strawberry. De-lish! Restores 
+   moderate amount of  TP.
+_____________________________________________________________________________
+CREPE -- 40% TP -- Wonder Chef: Aurnion
+   Banana, Egg, Kiwifruit, Milk -- 100G
+   A very thin pancake eaten with fresh cream and fruit. Restores a moderate 
+   amount of TP.
+_____________________________________________________________________________
+FRUIT PARFAIT -- 50% TP -- Rita: Crepe
+   Egg, Fruit (x4), Milk -- 120-200G
+   Fruits, ice cream and pudding! Oh my! Restores a great amount of TP.
+-----------------------------------------------------------------------------
+
+/// HP & TP Recovery ///
+_____________________________________________________________________________
+RICE BALL -- 5% HP & TP -- Estelle: Sandwich
+   Dried Seaweed, Rice, Salmon -- 150G
+   Rice rolled into a ball with a salmon filling. Restores a small amount of 
+   HP & TP.
+_____________________________________________________________________________
+OMELETTE RICE -- 10% HP & TP, Cures Petrify -- Karol: Beef Bowl
+   Egg, Chicken, Onion, Rice -- 210G
+   The harmony between eggs, ketchup and rice is to die for! Restores some HP 
+   & TP.
+_____________________________________________________________________________
+MEAT SAUCE -- 15% HP & TP, Cures all negative status -- Karol: Omelette Rice
+   Onion, Pork, Sticky Flour, Tomato -- 200G
+   Take caution when wearing white! Restores a moderate a amount of HP and TP.
+_____________________________________________________________________________
+MABO CURRY -- 25% HP & TP, Revives from K.O. -- Wonder Chef: Nordopolica*
+   Onion, Potato, Rice, Tofu, Tomato -- 200G
+   It's been said that this dish is for heroes. Restores a large amount of HP
+   and TP.
+-----------------------------------------------------------------------------
+
+/// Defense Bonus ///
+_____________________________________________________________________________
+FISH WITH MISO SAUCE -- +5% DEF, 5% HP -- Wonder Chef: Heliord
+   Mackerel, Miso, Rice -- 270G
+   The miso sauce goes will with steamed rice. Increases P. Defense slightly.
+_____________________________________________________________________________
+SASHIMI -- +10% DEF, 5% HP -- Raven: Salad
+   Mackerel, Salmon, Scallop, Squid, Tuna  -- 260G
+   A delicacy consisting of raw, very fresh, thinly slice seafood. Increases
+   Defense.
+_____________________________________________________________________________
+SEAFOOD BOWL -- +15% DEF, 5% HP -- Event in Nor Harbor
+   Cucumber, Rice, Salmon, Scallop, Shrimp, Tuna  -- 340G
+   A bowl of rice topped with a variety of fresh seafood. Tasty! Increases P.
+   Defense moderately.
+_____________________________________________________________________________
+SUSHI -- +25% DEF, 5% HP -- Karol: Sashimi
+   Dried Seaweed, Fish (x3), Kelp, Rice -- 250-370G
+   A delicacy of vinegared rice and fresh fish. Increases P. Defense greatly.
+_____________________________________________________________________________
+MINESTRONE SOUP -- +20% MDEF, 5% HP -- Wonder Chef: Dahngrest
+   Onion, Tomato -- 70G
+   A soup made with sun-ripened tomatoes. Very nutritious! Increases Magic
+   Defense.
+_____________________________________________________________________________
+MISO SOUP -- +40% MDEF, 5% HP -- Estelle: Minestrone Soup
+   Miso, Radish, Tofu -- 210G
+   A traditional soup made with a miso broth. Increases Magic Defense.
+_____________________________________________________________________________
+CLAM CHOWDER -- +60% MDEF, 5% HP -- Estelle: Miso Soup
+   Onion, Potato, Scallop -- 120G
+   Made with broth filled with all the goodness of the ocean! Increases Magic
+   Defense moderately.
+_____________________________________________________________________________
+VICHYSSOISE -- +80% MDEF, 5% HP -- Nam Cobanda Isle
+   Milk, Potato, Sticky Flour  -- 100G
+   A potato soup usually served cold. Increases Magic Defense greatly.
+_____________________________________________________________________________
+PORK MISO SOUP-- +100% MDEF, 5% HP -- Estelle: Vichyssoise
+   Carrot, Miso, Pork, Tofu  -- 260G
+   A hearty soup with chunks of vegetable and pork in a miso broth. Increases
+   Magic Defense greatly.
+-----------------------------------------------------------------------------
+
+/// Attack Bonus ///
+_____________________________________________________________________________
+SALISBURY STEAK -- +3% ATK, 5% HP -- Wonder Chef: Aspio
+   Beef, Egg, Onion -- 150G
+   A juicy meat patty topped with a savory sauce. Increases Attack slightly.
+_____________________________________________________________________________
+PORK STEW -- +5% ATK, 5% HP -- Raven: Beef Bowl
+   Kelp, Pork, Radish -- 140
+   These tender pork loins just melt away in your mouth. Increases Attack.
+_____________________________________________________________________________
+KEBAB SANDWICH -- +7% ATK, 5% HP -- Wonder Chef: Nordopolica
+   Beef, Bread, Lettuce, Tomato -- 270G
+   Pita bread stuffed with meat and vegetables. Increases attack moderately.
+_____________________________________________________________________________
+SUKIYAKI -- +15% ATK, 5% HP -- Judith: Japanese Stew
+   Beef (x2), Egg, Napa Cabbage, Shiitake, Tofu  -- 330G
+   Thin slices of beef and vegetables cooked in a sweey soy sauce. Increases
+   attack greatly.
+_____________________________________________________________________________
+FRIED CHICKEN AND FRIES -- +10% MATK, 5% HP -- Wonder Chef: Capua Torim
+   Chicken, Potato -- 110G
+   A set of french fries and fried chicken. Increases Magic Attack slightly.
+_____________________________________________________________________________
+SCOTTISH EGG -- +20% MATK, 5% HP -- Estelle: Fried Chicken and Fries
+   Egg, Meat, Tomato -- 100-160G
+   A hard boiled egg wrapped in meat and fried with bread crumbs. Increases 
+   Magic Attack.
+_____________________________________________________________________________
+CROQUETTE -- +30% MATK, 5% HP -- Wonder Chef: Yormgen
+   Meat, Onion, Potato -- 100-160G
+   A deep fried potato morsel with a light, crispy texture. Increases Magic
+   Attack moderately.
+_____________________________________________________________________________
+OKONOMIYAKI -- +40% MATK, 5% HP -- Raven: Scottish Egg
+   Cabbage, Egg, Meat, Shrimp, Squid, Sticky Flour --  220-280G
+   A hearty pan-fried meal cooked with various ingredients. Increases Magic
+   Attack greatly.
+_____________________________________________________________________________
+TEMPURA -- +50% MATK, 5% HP -- Judith: Croquette
+   Egg, Chicken, Shrimp, Squid, Sticky Flour, Vegetable  -- 260-280G
+   A dish of deep fried, lightly battered seafood and vegetables. Increases
+   Magic Attack greatly.
+-----------------------------------------------------------------------------
+
+/// Agility Bonus ///
+_____________________________________________________________________________
+SALAD -- +20%/2000 AGI, 5% HP -- Wonder Chef: Ghasfarost
+   Cucumber, Lettuce, Tomato -- 130G
+   Greens are good for you! Try them without dressing. Increases Agility.
+_____________________________________________________________________________
+JAPANESE STEW -- +40%/2000 AGI, 5% HP -- Judith: Pork Stew
+   Kelp, Radish, Squid -- 100G
+   A traditional home cooked meal. It's difficult to get the flavoring just 
+   right. Increases Agility.
+_____________________________________________________________________________
+VEGETABLE STIR FRY -- +60%/2400 AGI, 5% HP -- Rita: Salad
+   Carrot, Cucumber, Meat, Onion -- 150-210G
+   A nutritious dish that can be made with any kinds of vegetables. Increases
+   Agility greatly.
+_____________________________________________________________________________
+SOUP NOODLES -- +100%/2800 AGI, 5% HP -- Raven: Vegetable Stir Fry
+   Cabbage, Carrot, Onion, Pork, Sticky Flour -- 250G
+   Noodles and stir fried vegetables served in a light chicken broth.
+   Increases Agility greatly.
+-----------------------------------------------------------------------------
+
+/// Status Recovery ///
+_____________________________________________________________________________
+BEEF BOWL -- 20% HP, Cures Poison -- Yuri: Rice Ball
+   Beef, Onion, Rice -- 210G
+   A scrumptious bowl of rice topped with beef and tofu. Restores some HP.
+_____________________________________________________________________________
+OMELETTE RICE -- 10% HP & TP, Cures Petrify -- Karol: Beef Bowl
+   Egg, Chicken, Onion, Rice -- 210G
+   The harmony between eggs, ketchup and rice is to die for! Restores some HP 
+   & TP.
+_____________________________________________________________________________
+MEAT SAUCE -- 15% HP & TP, Cures all negative status -- Karol: Omelette Rice
+   Onion, Pork, Sticky Flour, Tomato -- 200G
+   Take caution when wearing white! Restores a moderate a amount of HP and TP.
+_____________________________________________________________________________
+MABO CURRY -- 25% HP & TP, Revives from K.O. -- Wonder Chef: Nordopolica*
+   Onion, Potato, Rice, Tofu, Tomato -- 200G
+   It's been said that this dish is for heroes. Restores a large amount of HP
+   and TP.
+-----------------------------------------------------------------------------
+
+/// Magic Bonus ///
+_____________________________________________________________________________
+FRIED CHICKEN AND FRIES -- +10% MATK, 5% HP -- Wonder Chef: Capua Torim
+   Chicken, Potato -- 110G
+   A set of french fries and fried chicken. Increases Magic Attack slightly.
+_____________________________________________________________________________
+SCOTTISH EGG -- +20% MATK, 5% HP -- Estelle: Fried Chicken and Fries
+   Egg, Meat, Tomato -- 100-160G
+   A hard boiled egg wrapped in meat and fried with bread crumbs. Increases 
+   Magic Attack.
+_____________________________________________________________________________
+MINESTRONE SOUP -- +20% MDEF, 5% HP -- Wonder Chef: Dahngrest
+   Onion, Tomato -- 70G
+   A soup made with sun-ripened tomatoes. Very nutritious! Increases Magic
+   Defense.
+_____________________________________________________________________________
+CROQUETTE -- +30% MATK, 5% HP -- Wonder Chef: Yormgen
+   Meat, Onion, Potato -- 100-160G
+   A deep fried potato morsel with a light, crispy texture. Increases Magic
+   Attack moderately.
+_____________________________________________________________________________
+MISO SOUP -- +40% MDEF, 5% HP -- Estelle: Minestrone Soup
+   Miso, Radish, Tofu -- 210G
+   A traditional soup made with a miso broth. Increases Magic Defense.
+_____________________________________________________________________________
+OKONOMIYAKI -- +40% MATK, 5% HP -- Raven: Scottish Egg
+   Cabbage, Egg, Meat, Shrimp, Squid, Sticky Flour --  220-280G
+   A hearty pan-fried meal cooked with various ingredients. Increases Magic
+   Attack greatly.
+_____________________________________________________________________________
+TEMPURA -- +50% MATK, 5% HP -- Judith: Croquette
+   Egg, Chicken, Shrimp, Squid, Sticky Flour, Vegetable  -- 260-280G
+   A dish of deep fried, lightly battered seafood and vegetables. Increases
+   Magic Attack greatly.
+_____________________________________________________________________________
+CLAM CHOWDER -- +60% MDEF, 5% HP -- Estelle: Miso Soup
+   Onion, Potato, Scallop -- 120G
+   Made with broth filled with all the goodness of the ocean! Increases Magic
+   Defense moderately.
+_____________________________________________________________________________
+VICHYSSOISE -- +80% MDEF, 5% HP -- Nam Cobanda Isle
+   Milk, Potato, Sticky Flour  -- 100G
+   A potato soup usually served cold. Increases Magic Defense greatly.
+_____________________________________________________________________________
+PORK MISO SOUP-- +100% MDEF, 5% HP -- Estelle: Vichyssoise
+   Carrot, Miso, Pork, Tofu  -- 260G
+   A hearty soup with chunks of vegetable and pork in a miso broth. Increases
+   Magic Defense greatly.
+-----------------------------------------------------------------------------
+
+/// Physical Bonus ///
+_____________________________________________________________________________
+SALISBURY STEAK -- +3% ATK, 5% HP -- Wonder Chef: Aspio
+   Beef, Egg, Onion -- 150G
+   A juicy meat patty topped with a savory sauce. Increases Attack slightly.
+_____________________________________________________________________________
+PORK STEW -- +5% ATK, 5% HP -- Raven: Beef Bowl
+   Kelp, Pork, Radish -- 140
+   These tender pork loins just melt away in your mouth. Increases Attack.
+_____________________________________________________________________________
+KEBAB SANDWICH -- +7% ATK, 5% HP -- Wonder Chef: Nordopolica
+   Beef, Bread, Lettuce, Tomato -- 270G
+   Pita bread stuffed with meat and vegetables. Increases attack moderately.
+_____________________________________________________________________________
+FISH WITH MISO SAUCE -- +5% DEF, 5% HP -- Wonder Chef: Heliord
+   Mackerel, Miso, Rice -- 270G
+   The miso sauce goes will with steamed rice. Increases P. Defense slightly.
+_____________________________________________________________________________
+SASHIMI -- +10% DEF, 5% HP -- Raven: Salad
+   Mackerel, Salmon, Scallop, Squid, Tuna  -- 260G
+   A delicacy consisting of raw, very fresh, thinly slice seafood. Increases
+   Defense.
+_____________________________________________________________________________
+SEAFOOD BOWL -- +15% DEF, 5% HP -- Event in Nor Harbor
+   Cucumber, Rice, Salmon, Scallop, Shrimp, Tuna  -- 340G
+   A bowl of rice topped with a variety of fresh seafood. Tasty! Increases P.
+   Defense moderately.
+_____________________________________________________________________________
+SUKIYAKI -- +15% ATK, 5% HP -- Judith: Japanese Stew
+   Beef (x2), Egg, Napa Cabbage, Shiitake, Tofu  -- 330G
+   Thin slices of beef and vegetables cooked in a sweey soy sauce. Increases
+   attack greatly.
+_____________________________________________________________________________
+SUSHI -- +25% DEF, 5% HP -- Karol: Sashimi
+   Dried Seaweed, Fish (x3), Kelp, Rice -- 250-370G
+   A delicacy of vinegared rice and fresh fish. Increases P. Defense greatly.
+-----------------------------------------------------------------------------
+
+/// Other ///
+_____________________________________________________________________________
+DOG FOOD -- 1% HP & TP -- Have Repede cook any recipe
+   Um... dogs seem to find this tasty.
+-----------------------------------------------------------------------------
