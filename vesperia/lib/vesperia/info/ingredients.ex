@@ -26,4 +26,10 @@ defmodule Vesperia.Info.Ingredients do
     |> List.flatten()
     |> Enum.uniq()
   end
+
+  def ingredient_types do
+    ingredient_groups()
+    |> Map.drop([:other])
+    |> Map.keys()
+  end
 end
