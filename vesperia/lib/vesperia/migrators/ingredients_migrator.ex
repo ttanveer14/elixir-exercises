@@ -28,7 +28,7 @@ defmodule Vesperia.Migrators.IngredientsMigrator do
        ]) do
     ingredient =
       ingredient_line
-      |> String.split(" ", parts: 2)
+      |> String.split("  ", parts: 2)
       |> List.first()
       |> String.downcase()
       |> String.replace(" ", "_")
