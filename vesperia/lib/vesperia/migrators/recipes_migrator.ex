@@ -1,7 +1,7 @@
 defmodule Vesperia.Migrators.RecipesMigrator do
   @recipes_list "./priv/vesperia-recipes-effects.txt"
 
-  def parse_recipe_names do
+  def parse_recipes() do
     @recipes_list
     |> File.stream!()
     |> Stream.map(&parse_recipe_name/1)
