@@ -1,0 +1,9 @@
+<h1> <%= recipe_name(@recipe_name) %> Recipe </h1>
+ ​   ​   
+<table>
+  <%= for ingredient <- @recipe do %>
+    <tr>
+      <td><b><%= ingredient_name(ingredient) %></b> (<%= quantity(ingredient)%>)</td>
+    </tr>
+  <% end %>
+</table>
