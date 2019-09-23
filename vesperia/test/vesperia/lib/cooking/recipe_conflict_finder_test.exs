@@ -22,4 +22,17 @@ defmodule Vesperia.Cooking.RecipeConflictFinderTest do
     assert RecipeConflictFinder.choose_recipes([:salisbury_steak, :sukiyaki]) ===
              expected_conflicts
   end
+
+  test "choosing single recipe returns no conflicts" do
+    expected_conflicts = %{soft_conflicts: [], hard_conflicts: %{}}
+
+    actual_conflicts =
+      Vesperia.Info.Recipes.recipes()
+      |> Map.keys()
+      |> Enum.random()
+      |> List.wrap()
+      |> RecipeConflictFinder.choose_recipes()
+
+    assert actual_conflicts === expected_conflicts
+  end
 end

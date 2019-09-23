@@ -3,10 +3,6 @@ defmodule Vesperia.Cooking.RecipeConflictFinder do
   @ingredient_types Vesperia.Info.Ingredients.ingredient_types()
   @ingredents_by_type Vesperia.Info.Ingredients.ingredient_groups()
 
-  def choose_recipes([recipe_name]) when is_atom(recipe_name) do
-    %{}
-  end
-
   def choose_recipes(recipe_names) when is_list(recipe_names) do
     @recipes
     |> Stream.filter(fn {recipe_name, _ingredients} -> recipe_name in recipe_names end)
