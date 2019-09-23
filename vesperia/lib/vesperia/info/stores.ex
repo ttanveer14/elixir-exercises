@@ -232,7 +232,7 @@ defmodule Vesperia.Info.Stores do
     }
   end
 
-  def stores(visit_number \\ 3) do
+  def stores(visit_number) do
     ingredients_by_visit()
     |> Enum.map(fn {store, sorted_inventory} ->
       {store, consolidate_inventory(sorted_inventory, visit_number)}
