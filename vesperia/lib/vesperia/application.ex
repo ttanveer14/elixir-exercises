@@ -9,7 +9,7 @@ defmodule Vesperia.Application do
     # Define workers and child supervisors to be supervised
     children = [
       # Start the Ecto repository
-      # supervisor(Vesperia.Repo, []),
+      supervisor(Vesperia.Repo, []),
       # Start the endpoint when the application starts
       supervisor(VesperiaWeb.Endpoint, [])
       # Start your own worker by calling: Vesperia.Worker.start_link(arg1, arg2, arg3)

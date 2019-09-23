@@ -58,7 +58,8 @@ config :phoenix, :stacktrace_depth, 20
 config :vesperia, Vesperia.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "edamame",
+  # password: "postgres",
   database: "vesperia_dev",
   hostname: "localhost",
   pool_size: 10
