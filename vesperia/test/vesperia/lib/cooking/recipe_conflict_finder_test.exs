@@ -17,9 +17,9 @@ defmodule Vesperia.Cooking.RecipeConflictFinderTest do
   recipes that require multiple ingredients (salisbury steak, sukiyaki)
   show correct quantity conflicts
   """ do
-    expected_conflicts = %{hard_conflicts: %{beef: 3, egg: 2}}
+    expected_conflicts = %{hard_conflicts: %{beef: 3, egg: 2}, soft_conflicts: []}
 
-    assert RecipeConflictFinder.choose_recipes([:salisbury_stea, :sukiyaki]) ===
+    assert RecipeConflictFinder.choose_recipes([:salisbury_steak, :sukiyaki]) ===
              expected_conflicts
   end
 end
