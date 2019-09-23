@@ -1,0 +1,9 @@
+<h1>Available Recipes in <%= location_name(@location_name) %></h1>
+ ​   ​   
+<table>
+  <%= for recipe <- @recipes_available do %>
+    <tr>
+      <td><b><%= recipe_name(recipe) %></b></td>
+    </tr>
+  <% end %>
+</table>

@@ -17,6 +17,7 @@ defmodule VesperiaWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
+    get("/locations/:location_name", LocationController, :location)
     get("/recipe/:recipe_name", RecipeController, :recipe)
     get("/", PageController, :index)
   end
