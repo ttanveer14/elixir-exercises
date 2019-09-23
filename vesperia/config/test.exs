@@ -13,7 +13,7 @@ config :logger, level: :warn
 config :vesperia, Vesperia.Repo,
   adapter: Ecto.Adapters.Postgres,
   username: "postgres",
-  password: "postgres",
+  password: "edamame",
   database: "vesperia_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox

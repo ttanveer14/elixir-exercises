@@ -55,8 +55,7 @@ defmodule Vesperia.Mixfile do
     [
       "ecto.setup": ["ecto.create", "ecto.migrate", "run priv/repo/seeds.exs"],
       "ecto.reset": ["ecto.drop", "ecto.setup"],
-      test: ["test"]
-      # "ecto.create --quiet", "ecto.migrate", taken out of test
+      test: ["test", "ecto.create --quiet", "ecto.migrate"]
     ]
   end
 end
