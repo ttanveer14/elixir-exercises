@@ -17,6 +17,7 @@ defmodule VesperiaWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
+    get("/hello", HelloController, :world)
     get("/", PageController, :index)
   end
 
