@@ -67,4 +67,31 @@ defmodule Vesperia.Info.Recipes do
       curry: %{carrot: 1, meat: 1, onion: 1, potato: 1, rice: 1}
     }
   end
+
+  def ingredients_used_in_recipes do
+    recipes()
+    |> Stream.map(&extract_ingredients/1)
+    |> Enum.reduce(%{}, fn ingredient_map, acc ->
+      Map.merge(acc, ingredient_map, fn _key, value1, value2 -> Map.merge(value1, value2) end)
+    end)
+  end
+
+  defp extract_ingredients({recipe_name, recipe}) when is_map(recipe) do
+    Enum.reduce(recipe, %{}, fn {ingredient, quantity}, acc ->
+      Map.put(acc, ingredient, %{recipe_name => quantity})
+    end)
+  end
+
+  # Use this to awesomify conflict finder
+  # def ingredients_in_recipes do
+  #   recipes()
+  #   |> Stream.map(&extract_ingredients/1)
+  #   |> Enum.reduce(%{}, fn ingredient_map, acc ->
+  #     Map.merge(acc, ingredient_map, fn _key, value1, value2 -> value1 + value2 end)
+  #   end)
+  # end
+
+  # defp extract_ingredients({_recipe_name, recipe}) when is_map(recipe) do
+  #   recipe
+  # end
 end
