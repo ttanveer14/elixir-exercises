@@ -1,0 +1,12 @@
+<h1>Recipe Conflict Finder</h1>
+
+<input>
+<button>Submit</button>
+ ​   ​   
+<table>
+  <%= for _recipe <- @recipe_conflicts do %>
+    <tr>
+      <td><b>Hello</b></td>
+    </tr>
+  <% end %>
+</table>
