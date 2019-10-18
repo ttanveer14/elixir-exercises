@@ -1,7 +1,7 @@
 <h1>Recipe Conflict Finder</h1>
 
 <input>
-<button>Submit</button>
+<button onclick="findConflicts()">Submit</button>
  ​   ​   
 <table>
   <%= for _recipe <- @recipe_conflicts do %>
@@ -10,3 +10,9 @@
     </tr>
   <% end %>
 </table>
+
+<script>
+function findConflicts(){
+  "Hello"
+}
+</script>
