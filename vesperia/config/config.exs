@@ -14,7 +14,17 @@ config :vesperia, VesperiaWeb.Endpoint,
   url: [host: "localhost"],
   secret_key_base: "1v15zMEUKvbq4Py5p1KCHgjYemkjpdwambIuFy26kNYeH1iVphSvsyU/5QS98tMg",
   render_errors: [view: VesperiaWeb.ErrorView, accepts: ~w(html json)],
-  pubsub: [name: Vesperia.PubSub, adapter: Phoenix.PubSub.PG2]
+  pubsub: [name: Vesperia.PubSub, adapter: Phoenix.PubSub.PG2],
+  live_view: [
+    signing_salt: "fNODAr4Ji+T+91D14p6hVnQT4H1DZijG"
+  ],
+  json_library: Poison
+
+config :vesperia, Repo,
+  database: "vesperia_repo",
+  username: "postgres",
+  password: "postgres",
+  hostname: "localhost"
 
 # Configures Elixir's Logger
 config :logger, :console,

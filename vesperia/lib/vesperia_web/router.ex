@@ -4,7 +4,7 @@ defmodule VesperiaWeb.Router do
   pipeline :browser do
     plug(:accepts, ["html"])
     plug(:fetch_session)
-    plug(:fetch_flash)
+    plug(:fetch_live_flash)
     plug(:protect_from_forgery)
     plug(:put_secure_browser_headers)
   end
@@ -17,6 +17,7 @@ defmodule VesperiaWeb.Router do
     # Use the default browser stack
     pipe_through(:browser)
 
+    get("/live/test", LiveTestController, :index)
     get("/recipe_conflicts", RecipeConflictController, :index)
     get("/locations/:location_name", LocationController, :location)
     get("/recipe/:recipe_name", RecipeController, :recipe)
