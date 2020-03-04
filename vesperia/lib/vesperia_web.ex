@@ -23,6 +23,7 @@ defmodule VesperiaWeb do
       import Plug.Conn
       import VesperiaWeb.Router.Helpers
       import VesperiaWeb.Gettext
+      import Phoenix.LiveView.Controller
     end
   end
 
@@ -41,6 +42,7 @@ defmodule VesperiaWeb do
       import VesperiaWeb.Router.Helpers
       import VesperiaWeb.ErrorHelpers
       import VesperiaWeb.Gettext
+      import Phoenix.LiveView.Helpers
     end
   end
 
@@ -49,6 +51,7 @@ defmodule VesperiaWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
+      import Phoenix.LiveView.Router
     end
   end
 

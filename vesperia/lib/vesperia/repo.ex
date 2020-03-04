@@ -1,5 +1,5 @@
 defmodule Vesperia.Repo do
-  use Ecto.Repo, otp_app: :vesperia
+  use Ecto.Repo, otp_app: :vesperia, adapter: Ecto.Adapters.Postgres
 
   @doc """
   Dynamically loads the repository url from the
