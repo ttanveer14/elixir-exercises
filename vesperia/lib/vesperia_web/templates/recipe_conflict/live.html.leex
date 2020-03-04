@@ -1,0 +1,67 @@
+<h1>Recipe Conflict Finder</h1>
+
+<form phx-submit="calculate_conflicts">
+  <p><label for="query">Recipes:</label></p>
+  <input type="text" name="query"><br>
+  <input type="submit" value="Submit">
+</form>
+
+<%= content_tag :div do %>
+  <%= if Enum.member?([[], nil], Map.get(@recipe_conflicts, :soft_conflicts)) === false do %>
+    <h3>Soft Conflicts</h3>
+    <table>
+      <%= for conflict <- @recipe_conflicts.soft_conflicts do %>
+        <div>
+          <thead>
+            <tr>
+              <th><b> Ingredient Type: </b></th>
+              <td><b><%= conflict |> Map.keys |> List.first() %></b></td>
+            </tr>
+            <tr>
+              <th><b> Ingredient </b></th>
+              <th><b> Recipe </b></th>
+              <th><b> Quantity </b></th>
+            </tr>
+          </thead>
+          <tbody>
+            <%= for {ingredient, recipes} <- conflict do %>
+              <%= for {recipe, quantity} <- recipes do %>
+                <tr>
+                  <td><%= ingredient %> </td>
+                  <td><%= recipe %></td>
+                  <td><%= quantity %></td>
+                </tr>
+              <% end %>
+            <% end %>
+          </tbody>
+        </div>
+      <% end %>
+    </table>
+  <% end %>
+<% end %>
+
+<%= content_tag :div do %>
+  <%= if Enum.member?([%{}, nil], Map.get(@recipe_conflicts, :hard_conflicts)) === false do %>
+    <h3>Hard Conflicts</h3>
+    <table>
+      <%= for {ingredient, recipe_map} <- @recipe_conflicts.hard_conflicts do %>
+        <div>
+          <tr>
+            <th><b> Ingredient: </b></th>
+            <td><b><%= ingredient %></b></td>
+          </tr>
+          <tr>
+            <th><b> Recipe </b></th>
+            <th><b> Quantity </b></th>
+          </tr>
+          <%= for {recipe, quantity} <- recipe_map do %>
+            <tr>
+              <td><%= recipe %></td>
+              <td><%= quantity %></td>
+            </tr>
+          <% end %>
+        </div>
+      <% end %>
+    </table>
+  <% end %>
+<% end %>
