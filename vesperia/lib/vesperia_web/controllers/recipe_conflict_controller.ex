@@ -4,12 +4,6 @@ defmodule VesperiaWeb.RecipeConflictController do
   alias Vesperia.Cooking.RecipeConflictFinder
 
   def index(conn, _params) do
-    render(conn, "index.html", recipe_conflicts: %{})
-  end
-
-  def submit(conn, %{user_input: user_input}) do
-    recipe_conflicts = RecipeConflictFinder.find_conflicts(user_input)
-
-    render(conn, "index.html", recipe_conflicts: recipe_conflicts)
+    live_render(conn, VesperiaWeb.Live.RecipeConflicts, session: %{})
   end
 end

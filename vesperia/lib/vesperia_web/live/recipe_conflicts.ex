@@ -1,10 +1,10 @@
-defmodule VesperiaWeb.Live.Test do
+defmodule VesperiaWeb.Live.RecipeConflicts do
   use Phoenix.LiveView
 
   alias Vesperia.Cooking.RecipeConflictFinder
 
   def render(assigns) do
-    Phoenix.View.render(VesperiaWeb.RecipeConflictView, "live.html", assigns)
+    Phoenix.View.render(VesperiaWeb.RecipeConflictView, "index.html", assigns)
   end
 
   def mount(_params, _session, socket) do
