@@ -5,13 +5,19 @@ defmodule Vesperia.Cooking.StoreRecipeFinder do
 
   alias Vesperia.Info.Stores
 
-  def recipes_available(store_name, visit_number \\ 3) do
+  def recipes_available(store_name, visit_number \\ 3, opts \\ []) do
     ingredients_available =
       visit_number
       |> Stores.stores()
       |> Map.fetch!(store_name)
 
-    Enum.filter(@recipes, &can_cook?(&1, ingredients_available))
+    recipes = Enum.filter(@recipes, &can_cook?(&1, ingredients_available))
+
+    if Enum.member?(opts, :names_only) do
+      Keyword.keys(recipes)
+    else
+      recipes
+    end
   end
 
   defp can_cook?({_recipe_name, ingredients_map}, ingredients_available) do
