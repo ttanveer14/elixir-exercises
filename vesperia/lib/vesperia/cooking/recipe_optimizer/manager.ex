@@ -53,6 +53,7 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
     case recipe_combos do
       [only_one_combo] ->
         Agent.start_link(fn -> only_one_combo end, name: @result_store)
+        Process.send_after(self(), :report_results, 0)
 
       _anything_else ->
         Agent.start_link(fn -> %{} end, name: @result_store)
@@ -77,6 +78,49 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
   end
 
   defp report_results() do
-    Agent.get(@result_store, & &1) |> map_size |> IO.inspect()
+    Agent.get(@result_store, & &1) |> calculate_optimal_combos() |> Enum.take(5) |> IO.inspect()
+  end
+
+  defp calculate_optimal_combos(results) when is_list(results) do
+    results
+  end
+
+  defp calculate_optimal_combos(results) when is_map(results) do
+    results
+    |> Enum.group_by(fn {_recipe_combo, conflicts} -> quantify_hard_conflicts(conflicts) end)
+    |> Enum.sort_by(fn {key, _value} -> key end, &<=/2)
+    |> Stream.map(fn {_key, results} ->
+      Enum.sort_by(
+        results,
+        fn {_recipe_combo, conflicts} -> quantify_soft_conflicts(conflicts) end,
+        &<=/2
+      )
+    end)
+    |> Enum.take(5)
+    |> List.flatten()
+  end
+
+  defp quantify_hard_conflicts(conflicts) do
+    conflicts
+    |> Map.get(:hard_conflicts)
+    |> Stream.map(fn {_ingredient, recipe_map} ->
+      count_ingredient_conflicts(recipe_map)
+    end)
+    |> Enum.sum()
+  end
+
+  defp quantify_soft_conflicts(conflicts) do
+    conflicts
+    |> Map.get(:soft_conflicts)
+    |> Enum.map(fn conflict_map ->
+      conflict_map
+      |> Enum.map(fn {_ingredient, recipe_map} -> count_ingredient_conflicts(recipe_map) end)
+    end)
+    |> List.flatten()
+    |> Enum.sum()
+  end
+
+  defp count_ingredient_conflicts(recipe_map) do
+    recipe_map |> Map.values() |> Enum.sum()
   end
 end
