@@ -9,8 +9,8 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Calculator do
     |> Enum.sort()
   end
 
-  def calculate_optimal_combos(results) when is_list(results) do
-    results
+  def calculate_optimal_combos(only_recipes_available) when is_list(only_recipes_available) do
+    [{only_recipes_available, nil}]
   end
 
   def calculate_optimal_combos(results) when is_map(results) do
