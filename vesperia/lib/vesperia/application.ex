@@ -14,7 +14,6 @@ defmodule Vesperia.Application do
       supervisor(VesperiaWeb.Endpoint, []),
       supervisor(Vesperia.Cooking.RecipeOptimizer.WorkerSupervisor, []),
       # Start your own worker by calling: Vesperia.Worker.start_link(arg1, arg2, arg3)
-      {Vesperia.Cooking.RecipeOptimizer.ResultStore, []},
       {Vesperia.Cooking.RecipeOptimizer.Manager, []}
     ]
 
