@@ -11,9 +11,10 @@ defmodule Vesperia.Application do
       # Start the Ecto repository
       supervisor(Vesperia.Repo, []),
       # Start the endpoint when the application starts
-      supervisor(VesperiaWeb.Endpoint, [])
+      supervisor(VesperiaWeb.Endpoint, []),
+      supervisor(Vesperia.Cooking.RecipeOptimizer.WorkerSupervisor, []),
       # Start your own worker by calling: Vesperia.Worker.start_link(arg1, arg2, arg3)
-      # worker(Vesperia.Worker, [arg1, arg2, arg3]),
+      {Vesperia.Cooking.RecipeOptimizer.Manager, []}
     ]
 
     # See https://hexdocs.pm/elixir/Supervisor.html
