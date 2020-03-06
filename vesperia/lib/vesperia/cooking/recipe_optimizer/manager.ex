@@ -2,9 +2,8 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
   use GenServer
 
   @me RecipeOptimizer.Manager
-  @result_store RecipeOptimizer.Results
 
-  alias Vesperia.Cooking.RecipeOptimizer.{WorkerSupervisor, Calculator}
+  alias Vesperia.Cooking.RecipeOptimizer.{WorkerSupervisor, Calculator, ResultStore}
 
   def start_link(recipe_combos) do
     GenServer.start_link(__MODULE__, recipe_combos, name: @me)
@@ -33,18 +32,10 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
     {:noreply, recipe_combos}
   end
 
-  def handle_info(:report_results, current_state) do
-    report_results()
-
-    Process.send_after(self(), :erase_results, 0)
+  def handle_info(:final_results, current_state) do
+    tabulate_final_results()
 
     {:noreply, current_state}
-  end
-
-  def handle_info(:erase_results, _current_state) do
-    Agent.stop(@result_store)
-
-    {:noreply, []}
   end
 
   def handle_cast({:optimize, store, visit}, _recipe_combos) do
@@ -52,11 +43,11 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
 
     case recipe_combos do
       [only_one_combo] ->
-        Agent.start_link(fn -> only_one_combo end, name: @result_store)
-        Process.send_after(self(), :report_results, 0)
+        ResultStore.reset_results(conflicts: only_one_combo)
+        Process.send_after(self(), :final_results, 0)
 
       _anything_else ->
-        Agent.start_link(fn -> %{} end, name: @result_store)
+        ResultStore.reset_results(conflicts: %{})
         Process.send_after(self(), :kickoff, 0)
     end
 
@@ -64,7 +55,7 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
   end
 
   def handle_cast({:done, last_recipe_combo}, [last_recipe_combo]) do
-    Process.send_after(self(), :report_results, 0)
+    Process.send_after(self(), :final_results, 0)
     {:noreply, []}
   end
 
@@ -73,13 +64,15 @@ defmodule Vesperia.Cooking.RecipeOptimizer.Manager do
   end
 
   def handle_cast({:result, recipes, conflicts}, recipe_combos) do
-    Agent.update(@result_store, &Map.put(&1, recipes, conflicts))
+    ResultStore.add_conflict(recipes, conflicts)
+
     {:noreply, recipe_combos}
   end
 
-  defp report_results() do
-    Agent.get(@result_store, & &1)
-    |> Calculator.calculate_optimal_combos()
-    |> IO.inspect()
+  defp tabulate_final_results() do
+    optimal_combos =
+      ResultStore.get_conflicts()
+      |> Calculator.calculate_optimal_combos()
+      |> ResultStore.add_optimal_combos()
   end
 end
