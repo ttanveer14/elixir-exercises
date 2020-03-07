@@ -8,7 +8,7 @@ defmodule VesperiaWeb.Live.OptimalRecipes do
   end
 
   def render(assigns) do
-    Phoenix.View.render(VesperiaWeb.OptimalRecipesView, "index.html", assigns)
+    VesperiaWeb.OptimalRecipesView.render("index.html", assigns)
   end
 
   def handle_event(
@@ -17,7 +17,6 @@ defmodule VesperiaWeb.Live.OptimalRecipes do
         socket
       ) do
     IO.inspect("here")
-    IO.inspect(socket)
 
     {:ok, optimal_recipe_combos} = RecipeOptimizer.optimalize_recipes(store, visit)
 

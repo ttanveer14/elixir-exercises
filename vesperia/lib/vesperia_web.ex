@@ -20,10 +20,11 @@ defmodule VesperiaWeb do
   def controller do
     quote do
       use Phoenix.Controller, namespace: VesperiaWeb
+
       import Plug.Conn
-      import VesperiaWeb.Router.Helpers
+      import Phoenix.LiveView.Controller, only: [live_render: 2, live_render: 3]
       import VesperiaWeb.Gettext
-      import Phoenix.LiveView.Controller
+      alias VesperiaWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -34,15 +35,14 @@ defmodule VesperiaWeb do
         namespace: VesperiaWeb
 
       # Import convenience functions from controllers
-      import Phoenix.Controller, only: [get_flash: 2, view_module: 1]
+      import Phoenix.Controller, only: [get_flash: 1, get_flash: 2, view_module: 1]
 
       # Use all HTML functionality (forms, tags, etc)
       use Phoenix.HTML
 
-      import VesperiaWeb.Router.Helpers
       import VesperiaWeb.ErrorHelpers
       import VesperiaWeb.Gettext
-      import Phoenix.LiveView.Helpers
+      alias VesperiaWeb.Router.Helpers, as: Routes
     end
   end
 
@@ -51,7 +51,7 @@ defmodule VesperiaWeb do
       use Phoenix.Router
       import Plug.Conn
       import Phoenix.Controller
-      import Phoenix.LiveView.Router
+      import Phoenix.LiveView.Router, only: [fetch_live_flash: 2]
     end
   end
 
