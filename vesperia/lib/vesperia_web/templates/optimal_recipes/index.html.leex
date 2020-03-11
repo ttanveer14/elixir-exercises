@@ -7,7 +7,7 @@
   <%= label f, :visit %>
   <%= text_input f, :visit %>
 
-  <%= submit "Submit", [phx_disable_with: "Loading...", phx_throttle: "10000", phx_debounce: "10000"] %>
+  <%= submit "Submit", [phx_disable_with: "Loading..."] %>
 </form>
 
 <%= if @optimal_recipe_combos != [] do %>
