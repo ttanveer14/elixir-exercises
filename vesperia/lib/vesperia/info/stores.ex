@@ -38,7 +38,18 @@ defmodule Vesperia.Info.Stores do
         ]
       },
       capua_torim: %{
-        0 => [:salmon, :rice, :potato, :peach, :onion, :mackerel, :dried_seaweed, :chicken, :beef]
+        0 => [
+          :salmon,
+          :rice,
+          :potato,
+          :peach,
+          :onion,
+          :mackerel,
+          :dried_seaweed,
+          :chicken,
+          :beef,
+          :milk
+        ]
       },
       dahngrest: %{
         0 => [
