@@ -1,16 +1,17 @@
 defmodule Vesperia.Cooking.RecipeOptimizer do
-  alias Vesperia.Cooking.RecipeOptimizer.{ResultStore, Manager}
+  alias Vesperia.Cooking.RecipeOptimizer.{ResultStore, Manager, Lens}
 
-  def find_optimal_recipes(store, visit) do
-    {:ok, _pid} = ResultStore.start_link(:no_args)
-
-    Manager.optimize(store, visit)
-
-    optimal_combos = get_results()
-
-    ResultStore.stop()
-
-    optimal_combos
+  def optimalize_recipes(store_input, visit_input) do
+    with {:ok, store, visit} <- Lens.sanitize_input(store_input, visit_input),
+         {:ok, _pid} <- ResultStore.start_link(:no_args),
+         :ok <- Manager.optimize(store, visit),
+         optimal_combos <- get_results(),
+         :ok <- ResultStore.stop(),
+         pretty_optimal_combos <- Lens.sanitize_output(optimal_combos) do
+      {:ok, pretty_optimal_combos}
+    else
+      e -> e
+    end
   end
 
   defp get_results() do

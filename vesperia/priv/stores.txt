@@ -13,7 +13,7 @@ CAPUA NOR -- "Nor"
 Apple, Beef, Bread, Dried Seaweed, Mackerel, Milk, Onion, Peach, Rice, Salmon
 _____________________________________________________________________________
 CAPUA TORIM -- "Torim"
-Beef, Chicken, Dried Seaweed, Mackerel, Onion, Peach, Potato, Rice, Salmon
+Beef, Chicken, Dried Seaweed, Mackerel, Onion, Peach, Potato, Rice, Salmon, Milk
 _____________________________________________________________________________
 HELIORD -- "Heliord"
 Beef, Chicken, Egg, Mackerel, Milk, Miso, Onion, Peach, Potato, Rice

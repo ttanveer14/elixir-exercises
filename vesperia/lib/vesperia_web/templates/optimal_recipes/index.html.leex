@@ -1,0 +1,25 @@
+<h1> Recipe Optimizer </h1>
+
+<%= f = form_for :form, "#", [phx_submit: :find_optimal_recipes] %>
+  <%= label f, :store %>
+  <%= text_input f, :store %>
+
+  <%= label f, :visit %>
+  <%= text_input f, :visit %>
+
+  <%= submit "Submit", [phx_disable_with: "Loading..."] %>
+</form>
+
+<%= if @optimal_recipe_combos != [] do %>
+  <h3>Best Recipe Combinations</h3>
+  <%= for {recipe_combo, _conflict} <- @optimal_recipe_combos do %>
+    <table>
+      <tr>
+        <th><b> Option: <th>
+        <%= for recipe <- recipe_combo do %>
+          <td><%= recipe %></td>
+        <% end %>
+      </tr>
+    </table>
+  <% end %>
+<% end %>
