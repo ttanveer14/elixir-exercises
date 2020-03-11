@@ -16,8 +16,6 @@ defmodule VesperiaWeb.Live.OptimalRecipes do
         %{"form" => %{"store" => store, "visit" => visit}},
         socket
       ) do
-    IO.inspect("here")
-
     {:ok, optimal_recipe_combos} = RecipeOptimizer.optimalize_recipes(store, visit)
 
     {:noreply, assign(socket, optimal_recipe_combos: optimal_recipe_combos)}

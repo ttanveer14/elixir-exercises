@@ -3,9 +3,7 @@ defmodule Vesperia.Cooking.RecipeOptimizer do
 
   def optimalize_recipes(store_input, visit_input) do
     with {:ok, store, visit} <- Lens.sanitize_input(store_input, visit_input),
-         _ <- IO.inspect("ABOUT TO START THIS THING"),
          {:ok, _pid} <- ResultStore.start_link(:no_args),
-         _ <- IO.inspect("STARTED THE THING"),
          :ok <- Manager.optimize(store, visit),
          optimal_combos <- get_results(),
          :ok <- ResultStore.stop(),
